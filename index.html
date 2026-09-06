@@ -4,7 +4,7 @@
     table{border-collapse:collapse;font-size:12.5px;width:100%}th{background:#eef2f7;text-align:left;padding:6px 8px;position:sticky;top:0}td{padding:5px 8px;border-bottom:1px solid #eee;white-space:nowrap}
     .scroll{overflow:auto;max-height:420px}.pos{color:#1b8a3a}.neg{color:#c62828}.muted{color:#888;font-size:12.5px}pre{background:#111;color:#ddd;padding:12px;border-radius:6px;font-size:12px;max-height:420px;overflow:auto}
     .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:1000px){.grid2{grid-template-columns:1fr}}code{background:#eef2f7;padding:1px 4px;border-radius:3px}</style></head><body>
-<header><h1>VCP Chartink — forward test</h1><div class='sub'>last session processed: <b>2026-09-04</b> · page built 2026-09-06 22:49 · rules in <code>config.json</code> · history in <code>STATUS.md</code></div></header><main>
+<header><h1>VCP Chartink — forward test</h1><div class='sub'>last session processed: <b>2026-09-04</b> · page built 2026-09-06 23:05 · rules in <code>config.json</code> · history in <code>STATUS.md</code></div></header><main>
 <section><h2>Ledger</h2><div class='kpis'>
 <div class='kpi'><b>Rs50,000</b><span>equity (+0.0%)</span></div><div class='kpi'><b>Rs50,000</b><span>cash</span></div>
 <div class='kpi'><b>0</b><span>open positions / 10 slots</span></div><div class='kpi'><b>0</b><span>queued for next open</span></div>
@@ -39,6 +39,7 @@
 2026-09-05 setup filters added (base&gt;=6w, last dip&gt;=5%): dropped queued STAR (base 5.0w, dip 8.1%)
 2026-09-05 setup filters added (base&gt;=6w, last dip&gt;=5%): dropped queued PANAMAPET (base 2.3w, dip 5.2%)
 2026-09-05 23:35  already processed 2026-09-04
-2026-09-06 22:49  already processed 2026-09-04</pre></section>
+2026-09-06 22:49  already processed 2026-09-04
+2026-09-06 23:05  already processed 2026-09-04</pre></section>
 <section><h2>Rules in force</h2><p class='muted'>FINAL G6 2026-09-05. Setup: max 3 dips, base &gt;= 6 weeks old, last dip &gt;= 5%, fundamentals up. Entry: close above pivot within 5% AND close in the top 20% of the day&#x27;s range, executed live in the last 15 min (booked at the 15:00 bar). Stop: higher of the last-dip low and entry-10% (stop-cap sweep 2026-09-05: 8-10% ridge beats 12% on portfolio ret/DD 1.35 vs 1.08 at equal test PF). At +7% stop -&gt; entry + 1%. EMA50 trail after risk-free. Rs50k / 10 slots / whole shares. Backtest 2018-26: 1,978 trades, win 55.8%, PF 2.09 (train 2.12 / test 2.06), Rs50k CAGR +25.5% maxDD -23.6%, Rs10L +25.0% / -24.4%. NIFTY +10% / -38%. Neighbourhood (out/sweep_f.csv, out/sweep_g.log) is a plateau.</p><p class='muted'>files: data/model/portfolio.json · trades.csv · fills_15m.csv · signals_full.csv · outcomes.csv · log.txt · out/watchlist_&lt;date&gt;.csv</p></section>
 </main></body></html>
