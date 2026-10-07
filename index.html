@@ -4,7 +4,7 @@
     table{border-collapse:collapse;font-size:12.5px;width:100%}th{background:#eef2f7;text-align:left;padding:6px 8px;position:sticky;top:0}td{padding:5px 8px;border-bottom:1px solid #eee;white-space:nowrap}
     .scroll{overflow:auto;max-height:420px}.pos{color:#1b8a3a}.neg{color:#c62828}.muted{color:#888;font-size:12.5px}pre{background:#111;color:#ddd;padding:12px;border-radius:6px;font-size:12px;max-height:420px;overflow:auto}
     .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:1000px){.grid2{grid-template-columns:1fr}}code{background:#eef2f7;padding:1px 4px;border-radius:3px}</style></head><body>
-<header><h1>VCP Chartink — forward test</h1><div class='sub'>last session processed: <b>2026-10-05</b> · page built 2026-10-07 00:33 · rules in <code>config.json</code> · history in <code>STATUS.md</code></div></header><main>
+<header><h1>VCP Chartink — forward test</h1><div class='sub'>last session processed: <b>2026-10-05</b> · page built 2026-10-07 12:35 · rules in <code>config.json</code> · history in <code>STATUS.md</code></div></header><main>
 <section><h2>Ledger</h2><div class='kpis'>
 <div class='kpi'><b>Rs51,400</b><span>equity (+2.8%)</span></div><div class='kpi'><b>Rs38,879</b><span>cash</span></div>
 <div class='kpi'><b>2</b><span>open positions / 10 slots</span></div><div class='kpi'><b>0</b><span>queued for next open</span></div>
@@ -35,9 +35,7 @@ window.open('https://github.com/Ujjwalb2/VCP-chartlink-automation/issues/new?lab
 function clearNote(){ta.value='';try{localStorage.removeItem('vcp_note_draft')}catch(e){};document.getElementById('notestatus').textContent=''}
 </script>
 <h4>saved notes</h4><div style='border-left:3px solid #1e88e5;padding:6px 10px;margin:6px 0;background:#f7f9fc'><b>2026-09-12</b> · <a href='https://github.com/Ujjwalb2/VCP-chartlink-automation/issues/3' target='_blank'>Note 2026-09-12: MOTILALOFS	2026-09-08	2026-09-11 ---- in this trade, there w</a><div style='white-space:pre-wrap;font-size:12.5px;margin-top:4px'>MOTILALOFS	2026-09-08	2026-09-11 ---- in this trade, there was an all-time high resistance, so you should consider that also. What are the bigger timeframe resistances that are there</div></div><div style='border-left:3px solid #1e88e5;padding:6px 10px;margin:6px 0;background:#f7f9fc'><b>2026-09-06</b> · <a href='https://github.com/Ujjwalb2/VCP-chartlink-automation/issues/2' target='_blank'>Note 2026-09-06: hello 2nd check</a><div style='white-space:pre-wrap;font-size:12.5px;margin-top:4px'>hello 2nd check</div></div><div style='border-left:3px solid #1e88e5;padding:6px 10px;margin:6px 0;background:#f7f9fc'><b>2026-09-06</b> · <a href='https://github.com/Ujjwalb2/VCP-chartlink-automation/issues/1' target='_blank'>Note 2026-09-06: Hello, this is the trail</a><div style='white-space:pre-wrap;font-size:12.5px;margin-top:4px'>Hello, this is the trail</div></div></section>
-<section><h2>Log (last 80 lines)</h2><pre>2026-09-10 22:39  SKIP THEJO: closed 2197.40 above pivot 2195.0 - setup quality: base 2.9w &lt; 6w, last dip 4.6% &lt; 5%
-2026-09-10 22:39  2026-09-10  equity Rs50,151  cash Rs21,334  open 6  queued 0  setups 33
-2026-09-10 22:39  outcomes rebuilt for 347 recorded signals
+<section><h2>Log (last 80 lines)</h2><pre>2026-09-10 22:39  outcomes rebuilt for 347 recorded signals
 2026-09-10 22:39  dashboard rebuilt: data/model/dashboard.html
 2026-09-11 22:38  SELL MOTILALOFS @ 992.21  -6.1%  (stop)
 2026-09-11 22:38  GAYAPROJ: +7% reached -&gt; stop to entry+1.0% = 23.54
@@ -114,6 +112,8 @@ function clearNote(){ta.value='';try{localStorage.removeItem('vcp_note_draft')}c
 2026-10-07 00:33  SKIP ARIES: closed 501.25 above pivot 485.41 - setup quality: base 4.0w &lt; 6w
 2026-10-07 00:33  SKIP REDINGTON: closed 412.75 above pivot 403.25 - weak close (75% of range)
 2026-10-07 00:33  2026-10-05  equity Rs51,400  cash Rs38,879  open 2  queued 0  setups 23
-2026-10-07 00:33  outcomes rebuilt for 753 recorded signals</pre></section>
+2026-10-07 00:33  outcomes rebuilt for 753 recorded signals
+2026-10-07 00:33  dashboard rebuilt: data/model/dashboard.html
+2026-10-07 12:35  market is open (12:35 IST) - today&#x27;s bar is not final; nothing processed. Re-run after 15:45 IST (or --force).</pre></section>
 <section><h2>Rules in force</h2><p class='muted'>FINAL G6 2026-09-05. Setup: max 3 dips, base &gt;= 6 weeks old, last dip &gt;= 5%, fundamentals up. Entry: close above pivot within 5% AND close in the top 20% of the day&#x27;s range, executed live in the last 15 min (booked at the 15:00 bar). Stop: higher of the last-dip low and entry-10% (stop-cap sweep 2026-09-05: 8-10% ridge beats 12% on portfolio ret/DD 1.35 vs 1.08 at equal test PF). At +7% stop -&gt; entry + 1%. EMA50 trail after risk-free. Rs50k / 10 slots / whole shares. Backtest 2018-26: 1,978 trades, win 55.8%, PF 2.09 (train 2.12 / test 2.06), Rs50k CAGR +25.5% maxDD -23.6%, Rs10L +25.0% / -24.4%. NIFTY +10% / -38%. Neighbourhood (out/sweep_f.csv, out/sweep_g.log) is a plateau.</p><p class='muted'>files: data/model/portfolio.json · trades.csv · fills_15m.csv · signals_full.csv · outcomes.csv · log.txt · out/watchlist_&lt;date&gt;.csv</p></section>
 </main></body></html>
